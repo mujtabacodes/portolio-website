@@ -1,0 +1,7 @@
+@media screen and (max-width:769px) {
+
+	.custom-style {
+		flex-direction: column;
+
+	}
+}

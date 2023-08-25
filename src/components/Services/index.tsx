@@ -16,24 +16,15 @@ const Services: FC<IServices> = () => {
 		<div className='flex flex-col py-10 mx-20'>
 			<div className='services-container '>
 				<div className='service-text'>
-					<div
-						className='text-9xl font-bold relative text-gray-200'
-						style={{ fontSize: '10rem' }}
-					>
+					<div className=' font-bold relative text-gray-200 custom-service-text'>
 						SER
 						<span className='text-black text-9xl absolute -top-3 -left-5'>SER</span>
 					</div>
-					<div
-						className='text-9xl font-bold relative text-gray-200'
-						style={{ fontSize: '10rem' }}
-					>
+					<div className=' font-bold relative text-gray-200 custom-service-text'>
 						VIC
 						<span className='text-black text-9xl absolute -top-3 -left-5'>VIC</span>
 					</div>
-					<div
-						className='text-9xl font-bold relative text-gray-200'
-						style={{ fontSize: '10rem' }}
-					>
+					<div className=' font-bold relative text-gray-200 custom-service-text'>
 						ES<span className='text-black text-9xl absolute -top-3 -left-5'>ES</span>
 					</div>
 				</div>
@@ -46,7 +37,6 @@ const Services: FC<IServices> = () => {
 			</div>
 			<div>
 				<DetailedService
-					title='Creative Solution'
 					description="Our team of experienced professionals is dedicated to delivering
 					exceptional results that exceed client expectations. Whether it's
 					branding, marketing, or web development,"
