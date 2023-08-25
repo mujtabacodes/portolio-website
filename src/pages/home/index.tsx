@@ -1,14 +1,17 @@
 import React, { FC } from 'react'
 
-import Button from '@components/Button'
+import Header from '@components/Header'
+import Nav from '@components/Nav'
+import Services from '@components/Services'
 
 interface IHome {}
 
 const Home: FC<IHome> = () => {
 	return (
-		<div className='text-3xl font-bold underline'>
-			hello
-			<Button onClick={() => alert('button clicked')}>THis is button</Button>
+		<div className='mx-10'>
+			<Nav />
+			<Header />
+			<Services />
 		</div>
 	)
 }
