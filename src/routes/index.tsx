@@ -9,6 +9,7 @@ export default function Routing() {
 		<Suspense>
 			<Routes>
 				<Route path='/' element={<Home />} />
+
 				<Route path='/collections' element={<Collections />} />
 				<Route path='*' element={<Navigate to='/' replace />} />
 			</Routes>

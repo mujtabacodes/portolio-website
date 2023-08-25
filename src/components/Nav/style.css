@@ -1,0 +1,28 @@
+.myContainer {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: 1px solid rgb(189, 189, 189);
+	align-items: center;
+	padding: .2rem .5rem;
+	width: 100%;
+}
+
+.logo>img {
+	width: 80px;
+	height: 80px;
+}
+
+.navitems>ul {
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 1.2rem;
+	gap: 1.5rem;
+}
+
+.navitems>ul>li:hover {
+	cursor: pointer;
+	opacity: .8;
+	;
+}
