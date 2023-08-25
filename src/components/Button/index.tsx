@@ -9,7 +9,7 @@ const Button = forwardRef<HTMLButtonElement, IButton>((p, ref) => {
 	const { children, ...props } = p
 
 	return (
-		<button ref={ref} {...props}>
+		<button ref={ref} {...props} className=''>
 			{children}
 		</button>
 	)
