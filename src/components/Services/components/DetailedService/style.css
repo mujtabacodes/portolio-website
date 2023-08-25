@@ -26,6 +26,7 @@
 
 	.custom-style {
 		flex-direction: column;
+		gap: 2rem;
 
 	}
 }
