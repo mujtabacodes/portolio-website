@@ -1,0 +1,8 @@
+{
+	"rewrites": [
+		{
+			"source": "/@components/:path*",
+			"destination": "/src/components/:path*"
+		}
+	]
+}
