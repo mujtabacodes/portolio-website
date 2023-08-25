@@ -5,8 +5,7 @@ import React, { FC } from 'react'
 import graphicImg from '@assets/icons/editing.svg'
 import digitalmarketingImg from '@assets/icons/growth.svg'
 import codingImg from '@assets/icons/programming-code-signs-1.svg'
-
-import Service from './components/service'
+import Service from '@components/Services/components/Service'
 
 interface IServices {}
 
