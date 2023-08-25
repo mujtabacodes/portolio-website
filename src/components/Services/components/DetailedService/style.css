@@ -1,3 +1,27 @@
+.creative-solution {}
+
+.creative-solution>img {
+	/* position: absolute; */
+}
+
+.dots-background {
+	background: radial-gradient(circle, #7a7a7a 1px, transparent 1px) repeat;
+	background-size: 12px 12px;
+	pointer-events: none;
+	top: 0;
+	right: 0;
+	z-index: 0;
+	margin: -3rem -5rem 0 0;
+}
+
+.creative-text {
+	margin: -3rem 0 0 -2rem;
+}
+
+.solution-text {
+	margin: 1rem -12rem 0 0;
+}
+
 @media screen and (max-width:769px) {
 
 	.custom-style {

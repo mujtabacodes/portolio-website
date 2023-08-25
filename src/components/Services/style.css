@@ -8,11 +8,7 @@
 	font-weight: 700;
 }
 
-.dots-background {
-	background: radial-gradient(circle, #000 1px, transparent 1px) repeat;
-	background-size: 12px 12px;
-	pointer-events: none;
-}
+
 
 @media screen and (max-width:769px) {
 	.services-container {

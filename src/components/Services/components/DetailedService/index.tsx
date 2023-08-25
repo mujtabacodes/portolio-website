@@ -15,18 +15,20 @@ const DetailedService: FC<IComponent> = ({ title, description }) => {
 			{title ? (
 				<h1 className='text-4xl font-semibold'>{title}</h1>
 			) : (
-				<div className='relative'>
-					<div className='dots-background absolute top-(-10) right-0 w-full h-full'></div>
-					<div className='text-top-left absolute top-0 left-0 p-2'>
+				<div className='relative creative-solution'>
+					<div className='w-72 h-32 absolute dots-background'></div>
+					<div className='text-5xl font-light text-top-left absolute top-0 left-0 creative-text'>
 						<span className='font-bold'>Creative</span>
 					</div>
-					<div className='text-top-right absolute top-0 right-0 p-2'>
-						<span>Another Text</span>
+					<div className='text-5xl font-light text-top-right absolute top-0 right-0 p-2 solution-text'>
+						<span>Solution</span>
 					</div>
-					<img src={creativeImg} alt='' width={300} />
+					<div className='w-full relative'>
+						<img src={creativeImg} alt='' width={300} />
+					</div>
 				</div>
 			)}
-			<p className='md:w-1/2 w-full '>{description}</p>
+			<p className={`md:w-1/2 w-full ${!title ? 'pt-48' : null}`}>{description}</p>
 		</div>
 	)
 }
