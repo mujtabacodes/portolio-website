@@ -1,5 +1,6 @@
 import React, { FC } from 'react'
 
+import Footer from '@components/Footer'
 import Header from '@components/Header'
 import Nav from '@components/Nav'
 import Portfolio from '@components/Portfolio'
@@ -14,6 +15,7 @@ const Home: FC<IHome> = () => {
 			<Header />
 			<Services />
 			<Portfolio />
+			<Footer />
 		</div>
 	)
 }

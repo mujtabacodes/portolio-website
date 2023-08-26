@@ -4,13 +4,16 @@ import React, { FC, useState } from 'react'
 
 import arrow from '@assets/icons/Group 48840.svg'
 import portfolio1 from '@assets/Image 2.png'
+import portfolio2 from '@assets/Image 7.png'
+import portfolio3 from '@assets/Image.png'
+import portfolio4 from '@assets/Image3.png'
 
 interface IPortfolio {}
 const dummyItems = [
 	{ id: 1, image: portfolio1 },
-	{ id: 2, image: portfolio1 },
-	{ id: 3, image: portfolio1 },
-	{ id: 4, image: portfolio1 },
+	{ id: 2, image: portfolio2 },
+	{ id: 3, image: portfolio3 },
+	{ id: 4, image: portfolio4 },
 ]
 const Portfolio: FC<IPortfolio> = () => {
 	const [portfolioItems, setportfolioItems] = useState(dummyItems)
