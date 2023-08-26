@@ -28,7 +28,7 @@ const Services: FC<IServices> = () => {
 						ES<span className='text-black text-9xl absolute -top-3 -left-5'>ES</span>
 					</div>
 				</div>
-				<div className='right-side grid grid-cols-2 gap-6 p-4'>
+				<div className='right-side grid grid-cols-1 gap-6 p-4 md:grid-cols-2'>
 					<Service image={codingImg} title='Website Development' />
 					<Service image={graphicImg} title='UI/UX Design' />
 					<Service image={codingImg} title='Mobile App Development' />

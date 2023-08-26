@@ -5,10 +5,11 @@ import { forwardRef } from 'react'
 interface IButton {
 	children: React.ReactNode
 	onClick?: () => void
+	type?: string
 }
 
 const Button = forwardRef<HTMLButtonElement, IButton>((p, ref) => {
-	const { children, ...props } = p
+	const { children, type, ...props } = p
 
 	return (
 		<button

@@ -2,6 +2,7 @@ import './style.css'
 
 import React, { FC, useState } from 'react'
 import { AiOutlineMenu } from 'react-icons/ai'
+import { useNavigate } from 'react-router-dom'
 
 import logo from '@assets/logo.png'
 import Button from '@components/Button'
@@ -10,9 +11,13 @@ interface INav {}
 
 const Nav: FC<INav> = () => {
 	const [menuOpen, setMenuOpen] = useState(false)
-
+	const Navigate = useNavigate()
 	const toggleMenu = () => {
 		setMenuOpen(!menuOpen)
+	}
+
+	const handleAddPortfolio = () => {
+		Navigate('/add')
 	}
 	return (
 		<div className='lg:myContainer flex justify-between items-center border-b border-gray-300 p-1.5 w-full'>
@@ -24,7 +29,9 @@ const Nav: FC<INav> = () => {
 					<li className='hover:opacity-80 cursor-pointer'>Home</li>
 					<li className='hover:opacity-80 cursor-pointer'>Services</li>
 					<li className='hover:opacity-80 cursor-pointer'>Careers</li>
-					<li className='hover:opacity-80 cursor-pointer'>Blog</li>
+					<li className='hover:opacity-80 cursor-pointer' onClick={handleAddPortfolio}>
+						Add Porfolio
+					</li>
 					<li className='hover:opacity-80 cursor-pointer'>About Moosh</li>
 				</ul>
 			</div>
@@ -46,8 +53,8 @@ const Nav: FC<INav> = () => {
 						<li className='hover:opacity-80 cursor-pointer' onClick={toggleMenu}>
 							Careers
 						</li>
-						<li className='hover:opacity-80 cursor-pointer' onClick={toggleMenu}>
-							Blog
+						<li className='hover:opacity-80 cursor-pointer' onClick={handleAddPortfolio}>
+							Add Porfolio
 						</li>
 						<li className='hover:opacity-80 cursor-pointer' onClick={toggleMenu}>
 							About Moosh

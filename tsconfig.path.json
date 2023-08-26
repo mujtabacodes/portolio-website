@@ -10,6 +10,7 @@
 			"@styles/*": ["src/styles/*"],
 			"@types": ["src/common/types"],
 			"@assets": ["src/assets"],
+			"@api": ["src/api"],
 			"@assets/*": ["src/assets/*"],
 			"@common/*": ["src/common/*"],
 			"@components/*": ["src/components/*"],
